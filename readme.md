@@ -11,7 +11,7 @@ Como indicado anteriormente, o aplicativo realiza o ciclo CRUD sobre base de dad
 
 - Listar jogadores: a aplicação retorna um arquivo JSON que contém todos os jogadores disponibilizados na base de dados do programa através do endpoint `api/players`. O retorno da API será um JSON semelhante a esse, com suas respectivas informações:
 
-```Json
+```JSON
     [
         {
             id: number,
@@ -50,7 +50,7 @@ Como indicado anteriormente, o aplicativo realiza o ciclo CRUD sobre base de dad
 
 - Mostrar jogador: a aplicação mostra ao se buscar no endpoint `api/players/{idjogador}`. Ao se acessar o enpoint passado como parâmetro um id correspondente ao de um jogador, a aplicação retornará um objeto com essas características:
 
-```Json
+```JSON
     id: number,
     name: string,
     club: string,
@@ -70,7 +70,7 @@ Como indicado anteriormente, o aplicativo realiza o ciclo CRUD sobre base de dad
 
 - Mostrar Clube: Além de se mostrar os jogadores, a API também é capaz de retornar aos usuários os times que participam do torneio, através do endpoint `api/clubs`. O retorno da aplicação será semelhante a esta:
 
-```Json
+```JSON
 {
     {
         id: number,
@@ -89,7 +89,7 @@ Como indicado anteriormente, o aplicativo realiza o ciclo CRUD sobre base de dad
 
 - Cadastro de novos jogadores: É possível cadastrar um novo jogador na aplicação por meio do endpoint `api/players` com o verbo **POST**. Ao fazer isso, a requisição precisa enviar um corpo com um formato semelhante ao que a API devolve como resposta ao se buscar um jogador pelo ID:
 
-```Json
+```JSON
     id: number,
     name: string,
     club: string,
@@ -109,7 +109,7 @@ Como indicado anteriormente, o aplicativo realiza o ciclo CRUD sobre base de dad
 
 - Atualizar jogador: através do endpoint `api/players/{idjogador}` com o devido id do objeto a se alterar e o verbo **PATCH**, o programa recebe um body que realiza a atualização de valores para o objeto corretamente. O corpo deve seguir o seguinte padrão:
 
-```Json
+```JSON
     {
         Overall: number,
         Pace: number,
@@ -144,7 +144,7 @@ As mentioned earlier, the application performs the CRUD cycle on a database that
 
 - List players: the application returns a JSON file containing all players available in the program's database through the `api/players` endpoint. The API response will be a JSON similar to this, with its respective information:
 
-```Json
+```JSON
     [
         {
             id: number,
@@ -183,7 +183,7 @@ As mentioned earlier, the application performs the CRUD cycle on a database that
 
 - Show player: the application displays a player when querying the endpoint `api/players/{playerId}`. By accessing the endpoint with an ID corresponding to a player, the application will return an object with these characteristics:
 
-```Json
+```JSON
     id: number,
     name: string,
     club: string,
@@ -204,7 +204,7 @@ As mentioned earlier, the application performs the CRUD cycle on a database that
 
 - Show club: In addition to displaying players, the API can also return the clubs participating in the tournament through the `api/clubs` endpoint. The application's response will be similar to this:
 
-```Json
+```JSON
 
 {
     {
@@ -225,7 +225,7 @@ As mentioned earlier, the application performs the CRUD cycle on a database that
 
 - Register new players: It is possible to register a new player in the application through the `api/players` endpoint using the POST method. When doing so, the request must send a body in a format similar to what the API returns when searching for a player by ID:
 
-```Json
+```JSON
     id: number,
     name: string,
     club: string,
@@ -244,7 +244,7 @@ As mentioned earlier, the application performs the CRUD cycle on a database that
 ```
 - Update player: through the endpoint `api/players/{playerId}` with the respective ID of the object to be updated and the PATCH method, the program receives a body that correctly updates the object's values. The body must follow this pattern:
 
-```Json
+```JSON
     {
         Overall: number,
         Pace: number,
